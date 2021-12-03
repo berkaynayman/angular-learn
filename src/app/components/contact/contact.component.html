@@ -1,0 +1,13 @@
+<p>contact works!</p>
+
+<h3>{{username}}</h3>
+
+<ul>
+    <li *ngFor="let user of users">
+        {{ user.name | avatar }} - {{ user.name }}
+    </li>
+</ul>
+
+<h1>Tarih : {{ today | date : 'd MMMM Y' | uppercase }}</h1>
+
+<h2>{{ 11300 | currency : 'EUR' }}</h2>
